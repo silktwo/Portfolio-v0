@@ -40,7 +40,7 @@ export default function Navigation({ activePage, setActivePage }: NavigationProp
               className={`inline-flex items-center gap-1 py-1 px-4 rounded-full transition-all duration-300 ease-in-out bg-black hover:bg-gray-800 cursor-pointer relative overflow-hidden`}
             >
               {category.hasLogo && (
-                <img src="/logo-header.svg" alt="Dmytro Kifuliak Logo" className="w-5 h-3 flex-shrink-0" />
+                <img src="/logo-header.svg\" alt="Dmytro Kifuliak Logo\" className="w-5 h-3 flex-shrink-0" />
               )}
               <span
                 className={`text-[11px] font-${category.primary ? "bold" : "medium"} whitespace-nowrap text-[#E3E3E3]`}
