@@ -1,4 +1,4 @@
-"use client"
+{`"use client"
 
 import { Badge } from "@/components/ui/badge"
 import { X } from "lucide-react"
@@ -37,19 +37,19 @@ export default function Navigation({ activePage, setActivePage }: NavigationProp
         return (
           <Link href={category.path} key={index}>
             <Badge
-              className={`inline-flex items-center gap-1 py-1 px-4 rounded-full transition-all duration-300 ease-in-out bg-black hover:bg-gray-800 cursor-pointer relative overflow-hidden`}
+              className={\`inline-flex items-center gap-1 py-1 px-4 rounded-full transition-all duration-300 ease-in-out bg-black hover:bg-gray-800 cursor-pointer relative overflow-hidden\`}
             >
               {category.hasLogo && (
                 <img src="/logo-header.svg" alt="Dmytro Kifuliak Logo" className="w-5 h-3 flex-shrink-0" />
               )}
               <span
-                className={`text-[11px] font-${category.primary ? "bold" : "medium"} whitespace-nowrap text-[#E3E3E3]`}
+                className={\`text-[11px] font-\${category.primary ? "bold" : "medium"} whitespace-nowrap text-[#E3E3E3]\`}
               >
                 {category.name}
               </span>
               {hasFontIndicator && <div className="w-1.5 h-1.5 bg-red-500 rounded-full flex-shrink-0" />}
               {isActive && !isFirstButton && !hasFontIndicator && (
-                <div className="w-3 h-3 bg-[#E3E3E3] rounded-full flex items-center justify-center flex-shrink-0 animate-in fade-in-0 zoom-in-95 duration-200">
+                <div className="w-3 h-3 bg-[#E3E3E3] rounded-full flex items-center justify-center flex-shrink-0">
                   <X className="w-2 h-2 text-black" />
                 </div>
               )}
@@ -59,4 +59,4 @@ export default function Navigation({ activePage, setActivePage }: NavigationProp
       })}
     </nav>
   )
-}
+}`}

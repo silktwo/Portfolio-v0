@@ -1,4 +1,4 @@
-"use client"
+{`"use client"
 
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
@@ -16,7 +16,7 @@ function ProjectCard({ project }: { project: any }) {
   return (
     <Card
       className="border-0 shadow-none cursor-pointer hover:opacity-80 transition-all duration-200 group"
-      onClick={() => router.push(`/work/${project.slug}`)}
+      onClick={() => router.push(\`/work/\${project.slug}\`)}
     >
       <CardContent className="p-0 space-y-1.5">
         <h3 className="font-medium text-[12px] text-black tracking-normal leading-normal">{project.title}</h3>
@@ -223,7 +223,7 @@ export default function Commercial() {
               >
                 <span className="text-[11px] font-bold">{filter}</span>
                 {isActive && (
-                  <div className="w-3 h-3 bg-[#949494] rounded-full flex items-center justify-center flex-shrink-0 animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="w-3 h-3 bg-[#949494] rounded-full flex items-center justify-center flex-shrink-0">
                     <X className="w-2 h-2 text-white" />
                   </div>
                 )}
@@ -249,4 +249,4 @@ export default function Commercial() {
       </div>
     </div>
   )
-}
+}`}
