@@ -1,4 +1,4 @@
-{`"use client"
+"use client"
 
 import { Badge } from "@/components/ui/badge"
 import { X } from "lucide-react"
@@ -37,13 +37,13 @@ export default function Navigation({ activePage, setActivePage }: NavigationProp
         return (
           <Link href={category.path} key={index}>
             <Badge
-              className={\`inline-flex items-center gap-1 py-1 px-4 rounded-full transition-all duration-300 ease-in-out bg-black hover:bg-gray-800 cursor-pointer relative overflow-hidden\`}
+              className={`inline-flex items-center gap-1 py-1 px-4 rounded-full transition-all duration-300 ease-in-out bg-black hover:bg-gray-800 cursor-pointer relative overflow-hidden`}
             >
               {category.hasLogo && (
                 <img src="/logo-header.svg" alt="Dmytro Kifuliak Logo" className="w-5 h-3 flex-shrink-0" />
               )}
               <span
-                className={\`text-[11px] font-\${category.primary ? "bold" : "medium"} whitespace-nowrap text-[#E3E3E3]\`}
+                className={`text-[11px] font-${category.primary ? "bold" : "medium"} whitespace-nowrap text-[#E3E3E3]`}
               >
                 {category.name}
               </span>
@@ -59,4 +59,4 @@ export default function Navigation({ activePage, setActivePage }: NavigationProp
       })}
     </nav>
   )
-}`}
+}
